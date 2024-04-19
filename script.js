@@ -38,15 +38,11 @@
 
       var randomCoins = coins[Math.floor(Math.random() * coins.length)];
       var randomCoinsDiv = document.getElementById("randomCoins");
-      var textDiv = document.getElementById("CoinsDiv");
       randomCoinsDiv.innerHTML = `
           <img src="${randomCoins.image}" alt="Stick" style="position: absolute; width:100vw; height:auto; top:0%; left:0%">
-          
-      `;
-      textDiv.innerHTML = `
-          <div class="Instruction">
-          <p>Umm, you get ${randomCoins.text}.  I see...</p>
-          </div>
+          <div class="CIns">
+          <p>Umm, you get ${randomCoins.text}.  I see.</p>
+          </div>   
       `;
       localStorage.setItem("Category", randomCoins.value);
   }
