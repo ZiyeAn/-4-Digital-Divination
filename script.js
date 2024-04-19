@@ -41,8 +41,9 @@
       var textDiv = document.getElementById("CoinsDiv");
       randomCoinsDiv.innerHTML = `
           <img src="${randomCoins.image}" alt="Stick" style="position: absolute; width:100vw; height:auto; top:0%; left:0%">
+          
       `;
-      randomCoinsDiv.innerHTML = `
+      textDiv.innerHTML = `
           <div class="Instruction">
           <p>Umm, you get ${randomCoins.text}.  I see...</p>
           </div>
