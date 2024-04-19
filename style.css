@@ -1,0 +1,168 @@
+
+html{
+    background-color:antiquewhite;
+}
+
+.homepage{
+    background-image: url("assets/IMG_4007.PNG");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+p{
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+}
+h1{
+  font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+.page1{
+    background-image: url("assets/IMG_4033.GIF");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.text{
+  position: absolute;
+  top:23vh;
+  left:70vw;
+}
+.sticks{
+    position: absolute;
+    left: 20%;
+    top:50vh;
+}
+.coins{
+    position: absolute;
+    left: 65%;
+    top:75vh;
+}
+
+.choice1{
+  background-image: url("assets/IMG_4018.PNG");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.choice2{
+  background-image: url("assets/IMG_4042.PNG");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.choice{
+  grid-area:content;
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  width: 95vw;
+  height: 80%;
+}
+
+.Instruction{
+  background-image: url("assets/IMG_4046.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  width: auto;
+  height:8vh;
+}
+.reply{
+  background-image: url("assets/IMG_4047.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 17%;
+  width: auto;
+  height:8vh;
+}
+
+.CIns{
+  position: absolute;
+  top:0%;
+  left:20%;
+  background-image: url("assets/IMG_4046.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: auto;
+  height:8vh;
+}
+#stickHolderFront{
+  position:absolute;
+  width:100vw;
+  height:auto;
+  bottom: -14vh;
+  left:0.5vw;
+}
+
+#randomCoins{
+  position: absolute;
+  width:100vw;
+  height:auto;
+  left:0%;
+  top:23%;
+}
+
+#coinsInstruction{
+  position: absolute;
+  top:17vh;
+  left:5%;
+}
+
+#cocktail{
+  width: 25%;
+  position: absolute;
+  top:50vh;
+  left:38%;
+}
+#drinks{
+  width: 25%;
+  position: absolute;
+  top:50vh;
+  left:38%;
+}
+button {
+  position: absolute;
+  top:25vh;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+ /*radio*/
+ .radio{
+    display: block;
+    cursor: pointer; 
+    user-select:none;
+    text-align: left;
+    padding: 5px;
+    width: 9.5vw;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    &+.radio{
+      margin-top: 12px;
+    }
+    input{
+      display: none;
+    }
+  }
+  .radio input[type="radio"]:checked + span img {
+    transform: translateY(-40px);
+}
